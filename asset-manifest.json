@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/flink-match/static/js/main.2de24e15.js",
-    "index.html": "/flink-match/index.html",
-    "main.2de24e15.js.map": "/flink-match/static/js/main.2de24e15.js.map"
+    "main.js": "./static/js/main.ea8c91f3.js",
+    "index.html": "./index.html",
+    "main.ea8c91f3.js.map": "./static/js/main.ea8c91f3.js.map"
   },
   "entrypoints": [
-    "static/js/main.2de24e15.js"
+    "static/js/main.ea8c91f3.js"
   ]
 }
