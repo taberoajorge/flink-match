@@ -32,3 +32,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Deploy del proyecto.
 - Usar animaciones, Tip: como el famoso swipe de Tinder.
 - Sección para visualizar tus selecciones.
+- Las rutas no estan protegidas.
