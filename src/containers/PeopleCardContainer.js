@@ -4,9 +4,8 @@ import styled from "styled-components";
 const StyledMain = styled.main`
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 `;
 function PeopleCardContainer({ children }) {
   return <StyledMain>{children}</StyledMain>;

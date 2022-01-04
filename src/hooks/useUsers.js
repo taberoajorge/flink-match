@@ -1,7 +1,6 @@
 import useLocalStorage from "./useLocalStorage";
 
 function useUsers() {
-
   const {
     item: users,
     saveItem: AddReaction,
@@ -11,11 +10,10 @@ function useUsers() {
     data,
   } = useLocalStorage("USERS_V1");
 
-
   const likePerson = (name) => {
     const userIndex = users.findIndex((user) => user.name === name);
     const newUser = [...users];
-    saveReaction("LIKED_USERS_v1", users[userIndex])
+    saveReaction("LIKED_USERS_v1", users[userIndex]);
     newUser[userIndex].likedPerson = true;
     newUser.splice(userIndex, 1);
     AddReaction(newUser);
@@ -24,15 +22,15 @@ function useUsers() {
   const superLikePerson = (name) => {
     const userIndex = users.findIndex((user) => user.name === name);
     const newUser = [...users];
-    saveReaction("SUPER_LIKED_USERS_V1", users[userIndex])
+    saveReaction("SUPER_LIKED_USERS_V1", users[userIndex]);
     newUser[userIndex].superLikedPerson = true;
     newUser.splice(userIndex, 1);
     AddReaction(newUser);
-  };  
+  };
 
   const dislikePerson = (name) => {
     const userIndex = users.findIndex((user) => user.name === name);
-    saveReaction("DISLIKED_USERS_V1", users[userIndex])
+    saveReaction("DISLIKED_USERS_V1", users[userIndex]);
     const newUser = [...users];
     newUser[userIndex].dislikedPerson = true;
     newUser.splice(userIndex, 1);
@@ -40,9 +38,8 @@ function useUsers() {
   };
 
   const resetData = () => {
-    AddReaction(data)
+    AddReaction(data);
   };
-
 
   return {
     resetData,

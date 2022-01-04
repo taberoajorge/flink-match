@@ -14,15 +14,13 @@ function useLocalStorage(itemName) {
     const DataUser = JSON.parse(localStorage.getItem("DATA_V1"));
     let preferences;
 
-
-    if (DataUser){
+    if (DataUser) {
       if (DataUser[0].preferences === "girls") {
         preferences = "api/v1/getWaifus";
       } else {
         preferences = "api/v1/getHusbandos";
       }
-    } 
-   
+    }
 
     let parsedItem;
 
@@ -84,10 +82,10 @@ function useLocalStorage(itemName) {
 
   const getLikeds = () => {
     let parsedItem;
-    const localStorageItem = localStorage.getItem('LIKED_USERS_v1');
+    const localStorageItem = localStorage.getItem("LIKED_USERS_v1");
     parsedItem = JSON.parse(localStorageItem);
     console.log(parsedItem);
-    setLikedPerson(parsedItem)
+    setLikedPerson(parsedItem);
   };
 
   return {

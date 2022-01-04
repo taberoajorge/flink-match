@@ -16,9 +16,10 @@ const StyledCreateAccountContainer = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
+  color: white;
   & > a {
     color: white;
-  font-size: 1.8rem;
+  font-size: var(--text-md);
   text-align: center;
   text-decoration: none;
   margin-top: 2rem;
@@ -26,7 +27,7 @@ const StyledCreateAccountContainer = styled.div`
 `;
 
 const StyledTitle = styled.h1`
-  font-size: 2.4rem;
+  font-size: var(--title);
   margin-bottom: 1.2rem;
   text-align: center;
 `;
@@ -42,44 +43,44 @@ const StyledForm = styled.form`
 `;
 
 const StyledLabel = styled.label`
-  font-size: 1.4rem;
+  font-size: var(--text-small);
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
 `;
 
 const StyledInput = styled.input`
-  background-color: #bababa;
+  background-color: var(--input-color);
   border: none;
-  border-radius: 8px;
-  height: 30px;
-  font-size: 1.6rem;
-  padding: 6px;
-  margin-bottom: 12px;
-  margin-bottom: 22px;
+  border-radius: 0.8rem;
+  height: 3.0rem;
+  font-size: var(--text-md);
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  margin-bottom: 2.2rem;
 `;
 
 const StyledPrimaryButton = styled.button`
-  background-color: white;
-  border-radius: 8px;
+  background-color: var(--white);
+  border-radius: 0.8rem;
   border: none;
   color: black;
   width: 100%;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: var(--text-md);
   font-weight: bold;
-  height: 50px;
+  height: 5rem;
 `;
 
 
 const StyledSelect = styled.select`
-  background-color: #bababa;
+  background-color: var(--input-color);
   border: none;
-  border-radius: 8px;
-  height: 30px;
-  font-size: 1.6rem;
-  padding: 6px;
-  margin-bottom: 12px;
-  margin-bottom: 22px;
+  border-radius: 0.8rem;
+  height: 3rem;
+  font-size: var(--text-md);
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  margin-bottom: 2.2rem;
 `;
 
 function CreateAccount() {

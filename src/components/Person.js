@@ -8,40 +8,32 @@ import SuperLike from "./actions/SuperLike";
 
 const StyledSection = styled.section`
   height: 85vh;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
+  display: grid;
+  place-items: center;
 `;
 
 const StyledFigure = styled.figure`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 52rem;
-
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100%;
+  width: 80vw;
 
   & > img {
-    width: 90%;
-    max-width: 34rem;
+    height: 100vh;
+    width: 90vw;
+    max-height: 85vh;
+    max-width: 65vh;
     border-radius: 2rem;
     overflow: hidden;
-    height: 52rem;
-    min-height: 52rem;
-    
   }
-
   & > figcaption {
-    border-radius: 2rem;
-    overflow: hidden;
-
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 18%,
-      rgba(0, 0, 0, 0) 100%
-    );
     width: 100%;
-    max-width: 34rem;
-    position: absolute;
-    bottom: 12rem;
+    margin-top: -14rem;
+    background: var(--gradient);
+    border-radius: 2rem;
   }
 `;
 
@@ -62,8 +54,10 @@ const StyledButtonContainer = styled.div`
   padding: 0.5rem;
   display: flex;
   justify-content: space-around;
-  min-width: 34 rem;
+  min-width: 34rem;
 `;
+
+
 
 function Person({ person, likePerson, superLikePerson, dislikePerson }) {
   const { name, age, gender, image, id } = person;
@@ -72,16 +66,16 @@ function Person({ person, likePerson, superLikePerson, dislikePerson }) {
       <StyledFigure>
         <img src={image} alt="waifu" />
         <figcaption>
-          <StyledTitle>
-            {name} {age}
-          </StyledTitle>
-          <StyledSubTitle>{gender}</StyledSubTitle>
-          <StyledButtonContainer>
-            <Rewind userId={id} />
-            <Dislike name={name} dislikePerson={dislikePerson} />
-            <SuperLike name={name} superLikePerson={superLikePerson} />
-            <Like name={name} likePerson={likePerson} />
-          </StyledButtonContainer>
+            <StyledTitle>
+              {name} {age}
+            </StyledTitle>
+            <StyledSubTitle>{gender}</StyledSubTitle>
+            <StyledButtonContainer>
+              <Rewind userId={id} />
+              <Dislike name={name} dislikePerson={dislikePerson} />
+              <SuperLike name={name} superLikePerson={superLikePerson} />
+              <Like name={name} likePerson={likePerson} />
+            </StyledButtonContainer>
         </figcaption>
       </StyledFigure>
     </StyledSection>

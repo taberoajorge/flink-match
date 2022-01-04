@@ -6,7 +6,7 @@ import { PlugDisconnected } from "styled-icons/fluentui-system-filled";
 import { ChatHistory } from "styled-icons/remix-fill";
 
 const StyledFooter = styled.footer`
-  position: absolute;
+  position: relative;
   bottom: 0;
   padding: 1rem;
   background-color: white;
@@ -18,11 +18,9 @@ const StyledFooter = styled.footer`
     width: 100%;
   }
 `;
-
 const StyledNav = styled.nav`
   width: 100vw;
 `;
-
 const StyledUl = styled.ul`
   display: flex;
   justify-content: space-around;

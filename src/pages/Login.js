@@ -13,29 +13,29 @@ const StyledFormContainer = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 30rem;
-  & >a {
+  & > a {
+    display: grid;
+    place-items: center;
     color: black;
-  background-color: white;
-  border-radius: 0.8rem;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-  font-size: 1.8rem;
-  font-weight: bold;
-  height: 5rem;
-  margin-top: 1.4rem;
-  margin-bottom: 3rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background-color: white;
+    border-radius: var(--border-main);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--text-md);
+    font-weight: bold;
+    height: 5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
   }
 `;
 
 const StyledTitle = styled.h1`
-  font-size: 2.4rem;
+  font-size: var(--title);
   margin-bottom: 1.2rem;
   text-align: center;
+  color: white;
 `;
 
 const StyledForm = styled.form`
@@ -44,42 +44,42 @@ const StyledForm = styled.form`
 `;
 
 const StyledLabel = styled.label`
-  font-size: 1.4rem;
+  font-size: var(--text-small);
   font-weight: bold;
-  margin-bottom: 0.4rem;
+  margin: 0.5rem;
+  color: white;
 `;
 
 const StyledA = styled.a`
-  color: white;
-  font-size: 1.8rem;
+  color: var(--white);
+  font-size: var(--text-md);
   text-align: center;
   text-decoration: none;
   margin-bottom: 2rem;
 `;
 
 const StyledInput = styled.input`
-  background-color: #bababa;
+  height: 3rem;
+  font-size: var(--text-small);
+  background-color: var(--input-color);
   border: none;
   border-radius: 0.8rem;
-  height: 3rem;
-  font-size: 1.4rem;
   padding: 0.6rem;
 `;
 
 const StyledPrimaryButton = styled.input`
   background-color: white;
-  border-radius: 0.8rem;
+  border-radius: var(--border-main);
   border: none;
-  color: var(--white);
   width: 100%;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: var(--text-md);
   font-weight: bold;
   height: 5rem;
   margin-top: 1.4rem;
   margin-bottom: 3rem;
+  color: black;
 `;
-
 
 function Login() {
   return (
