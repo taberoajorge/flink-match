@@ -5,8 +5,6 @@ function useUsers() {
     item: users,
     saveItem: AddReaction,
     saveReaction,
-    loading,
-    error,
     data,
   } = useLocalStorage("USERS_V1");
 
@@ -44,8 +42,6 @@ function useUsers() {
   return {
     resetData,
     users,
-    loading,
-    error,
     likePerson,
     superLikePerson,
     dislikePerson,

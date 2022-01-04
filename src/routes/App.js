@@ -7,6 +7,7 @@ import Login from '../pages/Login';
 import SearchPage from '../pages/SearchPage';
 
 function App() {
+  var a =4
   return (
     <BrowserRouter>
       <GlobalStyle />

@@ -26,7 +26,6 @@ function useLocalStorage(itemName) {
 
     axios.get(`${URL_API}${preferences}`).then((response) => {
       const users = response.data;
-      // console.log(users);
       let extraProps;
 
       if (users.waifus) {
@@ -55,7 +54,7 @@ function useLocalStorage(itemName) {
         parsedItem = JSON.parse(localStorageItem);
       }
       setItem(parsedItem);
-    });
+    }).catch((error)=>console.error(error));
   }, []);
 
   const saveItem = (newItem) => {
