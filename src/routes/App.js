@@ -13,8 +13,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<SearchPage />} />
         <Route exact path="/login" element={<Login />} />
-        <Route exact path="/createAccount" element={<CreateAccount />} />
-        <Route exact path="/likedUsers" element={<LikedUsers />} />
+        <Route exact path="/create-account" element={<CreateAccount />} />
+        <Route exact path="/liked-users" element={<LikedUsers />} />
+        <Route exact path="*" element={<p>error 404 not found</p>} />
       </Routes>
     </BrowserRouter>
   );
