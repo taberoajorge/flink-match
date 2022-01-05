@@ -11,8 +11,8 @@ function App() {
     <BrowserRouter>
       <GlobalStyle />
       <Routes>
-        <Route exact path="/search-page" element={<SearchPage />} />
         <Route exact path="/" element={<Login />} />
+        <Route exact path="/search-page" element={<SearchPage />} />
         <Route exact path="/create-account" element={<CreateAccount />} />
         <Route exact path="/liked-users" element={<LikedUsers />} />
         <Route exact path="*" element={<p>error 404 not found <Link to={"./create-account"}>Registarte</Link> <Link to={"./login"}>Inicia sesion</Link> </p>} />

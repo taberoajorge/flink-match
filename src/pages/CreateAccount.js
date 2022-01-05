@@ -97,14 +97,14 @@ function CreateAccount() {
       preferences: formData.get("preferences"),
     };
     saveReaction("DATA_V1", data);
-    Navigate("/search-page");
+    Navigate('/search-page');
   };
 
   return (
     <StyledCreateAccount>
       <StyledCreateAccountContainer>
         <StyledTitle>Create Account</StyledTitle>
-        <StyledForm action="/" ref={form}>
+        <StyledForm action="search-page" ref={form}>
           <StyledLabel htmlFor="name">name</StyledLabel>
           <StyledInput type="text" name="name" placeholder="Marco" />
           <StyledLabel htmlFor="lastName">Last Name address</StyledLabel>

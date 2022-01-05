@@ -90,7 +90,7 @@ function Login() {
     <StyledLogin>
       <StyledFormContainer>
         <StyledTitle>Bienvenido</StyledTitle>
-        <StyledForm onSubmit={handleSubmit} action="/login">
+        <StyledForm onSubmit={handleSubmit} action="/search-page">
           <StyledLabel htmlFor="email">email</StyledLabel>
           <StyledInput
             type="email"
