@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledLogin = styled.div`
@@ -82,11 +82,15 @@ const StyledPrimaryButton = styled.input`
 `;
 
 function Login() {
+  const handleSubmit = () => {
+    Navigate("/search-page");
+  };
+
   return (
     <StyledLogin>
       <StyledFormContainer>
         <StyledTitle>Bienvenido</StyledTitle>
-        <StyledForm action="/">
+        <StyledForm onSubmit={handleSubmit} action="/login">
           <StyledLabel htmlFor="email">email</StyledLabel>
           <StyledInput
             type="email"
@@ -98,7 +102,7 @@ function Login() {
           <StyledPrimaryButton type="submit" value="Confirm" />
           <StyledA>Forgot my password</StyledA>
         </StyledForm>
-        <Link to={"/createAccount"}>Sign Up</Link>
+        <Link to={"/create-account"}>Sign Up</Link>
       </StyledFormContainer>
     </StyledLogin>
   );

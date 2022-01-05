@@ -97,7 +97,7 @@ function CreateAccount() {
       preferences: formData.get("preferences"),
     };
     saveReaction("DATA_V1", data);
-    Navigate("/jevitos-search");
+    Navigate("/search-page");
   };
 
   return (
