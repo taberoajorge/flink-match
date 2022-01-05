@@ -102,7 +102,7 @@ function Login() {
           <StyledPrimaryButton type="submit" value="Confirm" />
           <StyledA>Forgot my password</StyledA>
         </StyledForm>
-        <Link to={"/create-account"}>Sign Up</Link>
+        <Link to={"./create-account"}>Sign Up</Link>
       </StyledFormContainer>
     </StyledLogin>
   );

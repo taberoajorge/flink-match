@@ -104,7 +104,7 @@ function CreateAccount() {
     <StyledCreateAccount>
       <StyledCreateAccountContainer>
         <StyledTitle>Create Account</StyledTitle>
-        <StyledForm action="search-page" ref={form}>
+        <StyledForm action="/search-page" ref={form}>
           <StyledLabel htmlFor="name">name</StyledLabel>
           <StyledInput type="text" name="name" placeholder="Marco" />
           <StyledLabel htmlFor="lastName">Last Name address</StyledLabel>
@@ -130,7 +130,7 @@ function CreateAccount() {
             Create
           </StyledPrimaryButton>
         </StyledForm>
-        <Link to={'/login'}> Log In</Link>
+        <Link to={'/'}> Log In</Link>
       </StyledCreateAccountContainer>
     </StyledCreateAccount>
   );

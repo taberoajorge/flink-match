@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import React from 'react';
 import styled from 'styled-components';
 import useUsers from '../hooks/useUsers';
