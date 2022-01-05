@@ -22,7 +22,7 @@ function App() {
             <p>
               error 404 not found{" "}
               <Link to={"./create-account"}>Registarte</Link>
-              <Link to={"./login"}>Inicia sesion</Link>
+              <Link to={"login"}>Inicia sesion</Link>
             </p>
           }
         />

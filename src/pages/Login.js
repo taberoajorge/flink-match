@@ -83,14 +83,14 @@ const StyledPrimaryButton = styled.input`
 
 function Login() {
   const handleSubmit = () => {
-    Navigate("/search-page");
+    Navigate("/match");
   };
 
   return (
     <StyledLogin>
       <StyledFormContainer>
         <StyledTitle>Bienvenido</StyledTitle>
-        <StyledForm onSubmit={handleSubmit} action="/search-page">
+        <StyledForm onSubmit={handleSubmit} action="/match">
           <StyledLabel htmlFor="email">email</StyledLabel>
           <StyledInput
             type="email"
