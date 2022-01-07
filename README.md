@@ -1,5 +1,5 @@
 ## FLINK MATCH 
- It's just a dating app. Thanks for the opportunity.
+ It's just a dating app. 
  
 ### Deploy del proyecto
  
@@ -23,6 +23,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
 
 ## Whats working?
 - Pantalla principal con opción de inicio de sesión y registro. 
