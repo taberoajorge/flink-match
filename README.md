@@ -1,5 +1,5 @@
 ## FLINK MATCH 
- It's just a dating app. Thanks for the opportunity, enjoy, future team!!
+ It's just a dating app. Thanks for the opportunity.
  
 ### Deploy del proyecto
  
