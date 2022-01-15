@@ -9,7 +9,7 @@ function useLocalStorage(itemName) {
   const [data, setData] = React.useState([]);
   const [likedPerson, setLikedPerson] = React.useState([]);
 
-  React.useEffect(() => {
+  React.useEffect( async () => {
     const localStorageItem = localStorage.getItem(itemName);
     const DataUser = JSON.parse(localStorage.getItem("DATA_V1"));
     let preferences;
@@ -24,7 +24,7 @@ function useLocalStorage(itemName) {
 
     let parsedItem;
 
-    axios.get(`${URL_API}${preferences}`).then((response) => {
+    await axios.get(`${URL_API}${preferences}`).then((response) => {
       const users = response.data;
       // console.log(users);
       let extraProps;

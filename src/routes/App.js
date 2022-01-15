@@ -21,8 +21,10 @@ function App() {
           element={
             <p>
               error 404 not found{" "}
-              <Link to={"./create-account"}>Registarte</Link>
-              <Link to={"login"}>Inicia sesion</Link>
+              <br />
+              <Link to={"/create-account"}>Registarte</Link>
+              <br />
+              <Link to={"/"}>Inicia sesion</Link>
             </p>
           }
         />

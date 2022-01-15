@@ -34,10 +34,10 @@ function Footer({getLikeds}) {
       <StyledNav>
         <StyledUl>
           <li>
-          <Link to="/login"><PlugDisconnected size={30} color="black" /></Link>
+          <Link to="/"><PlugDisconnected size={30} color="black" /></Link>
           </li>
           <li>
-          <Link to="/"><Fire size={30} color="red" /></Link>
+          <Link to="/match"><Fire size={30} color="red" /></Link>
           </li>
           <li>
           <Link onClick={getLikeds} to="/likedUsers"><ChatHistory size={30} color="black" /></Link>
