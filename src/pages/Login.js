@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link, Navigate} from "react-router-dom";
 import styled from "styled-components";
 
 const StyledLogin = styled.div`
@@ -82,23 +82,42 @@ const StyledPrimaryButton = styled.input`
 `;
 
 function Login() {
+  const form = React.useRef('');
+
+  const handleSubmit = (e) => {
+    const formData = new FormData(form.current);
+    const data = {
+      username: formData.get("email"),
+      password: formData.get("password"),
+    };
+    Navigate("/match");
+  };
+
   return (
     <StyledLogin>
       <StyledFormContainer>
         <StyledTitle>Bienvenido</StyledTitle>
-        <StyledForm action="/">
+        <StyledForm ref={form}>
           <StyledLabel htmlFor="email">email</StyledLabel>
           <StyledInput
             type="email"
-            id="email"
+            name="email"
             placeholder="ejemplo@gmail.com"
           />
           <StyledLabel htmlFor="password">Password</StyledLabel>
-          <StyledInput type="password" id="password" placeholder="*********" />
-          <StyledPrimaryButton type="submit" value="Confirm" />
+          <StyledInput
+            type="password"
+            name="password"
+            placeholder="*********"
+          />
+          <StyledPrimaryButton
+            onClick={(e) => handleSubmit(e)}
+            type="submit"
+            value="Confirm"
+          />
           <StyledA>Forgot my password</StyledA>
         </StyledForm>
-        <Link to={"/createAccount"}>Sign Up</Link>
+        <Link to={"/create-account"}>Sign Up</Link>
       </StyledFormContainer>
     </StyledLogin>
   );
